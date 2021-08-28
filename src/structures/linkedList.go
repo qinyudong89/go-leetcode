@@ -3,28 +3,28 @@ package structures
 import "fmt"
 
 type Node struct {
-	data interface{}
-	next *Node
+	Data interface{}
+	Next *Node
 }
 
 type LinkedList struct {
 	Size int
-	head *Node
+	Head *Node
 }
 
-func (list *LinkedList) addFirst(data interface{}) {
+func (list *LinkedList) AddFirst(data interface{}) {
 	element := new(Node)
-	element.data = data
-	element.next = list.head
-	list.head = element
+	element.Data = data
+	element.Next = list.Head
+	list.Head = element
 	list.Size++
 }
 
 func (l *LinkedList) Display() {
-	list := l.head
+	list := l.Head
 	for list != nil {
-		fmt.Printf("%+v ->", list.data)
-		list = list.next
+		fmt.Printf("%+v ->", list.Data)
+		list = list.Next
 	}
 	fmt.Println()
 }

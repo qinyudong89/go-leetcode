@@ -6,8 +6,8 @@ import (
 
 func TestLinkedList_Init(t *testing.T) {
 	list := new(LinkedList)
-	list.addFirst(20)
-	list.addFirst(12)
-	list.addFirst(78)
+	list.AddFirst(20)
+	list.AddFirst(12)
+	list.AddFirst(78)
 	list.Display()
 }
