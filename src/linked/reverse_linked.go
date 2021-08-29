@@ -1,9 +1,8 @@
 package linked
 
-type ListNode struct {
-	Val  int
-	Next *ListNode
-}
+import "github.com/qinyudong89/go-leetcode/src/structures"
+
+type ListNode = structures.ListNode
 
 func ReverseList(head *ListNode) *ListNode {
 	if head == nil {
